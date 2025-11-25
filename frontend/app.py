@@ -2,7 +2,7 @@
 Frontend - E-commerce
 Aplicación Flask que renderiza la interfaz web y consume el backend API
 """
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, redirect
 from config import get_config
 from utils import safe_api_request, render_error_page
 
@@ -18,7 +18,7 @@ def create_app():
     @app.route("/")
     def home():
         """Página principal"""
-        return render_template("index.html")
+        return redirect("/productos")
 
     @app.route("/productos")
     def productos():
