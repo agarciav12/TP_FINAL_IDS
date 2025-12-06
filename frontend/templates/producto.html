@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+<<<<<<< HEAD
     <link rel="apple-touch-icon" href="{{ url_for('static', filename='img/apple-icon.png') }}">
     <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='img/favicon.ico') }}">
 
@@ -31,12 +32,33 @@ https://templatemo.com/tm-559-zay-shop
 
 <body>
     <!-- Start Top Nav -->
+=======
+    <link rel="apple-touch-icon" href="{{ url_for('static', filename='assets/img/apple-icon.png') }}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='assets/img/favicon.ico') }}">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/templatemo.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/custom.css') }}">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/fontawesome.min.css') }}">
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='assets/css/slick.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='assets/css/slick-theme.css') }}">
+</head>
+
+<body>
+>>>>>>> ff66d95 (Actualizar proyecto final: Terminado carrito y correcciones de archivos .html)
     <nav class="navbar navbar-expand-lg bg-dark navbar-light d-none d-lg-block" id="templatemo_nav_top">
         <div class="container text-light">
             <div class="w-100 d-flex justify-content-between">
                 <div>
                     <i class="fa fa-envelope mx-2"></i>
+<<<<<<< HEAD
                     <a class="navbar-sm-brand text-light text-decoration-none" href="mailto:info@company.com">info@ZonaGamer.com</a>
+=======
+                    <a class="navbar-sm-brand text-light text-decoration-none" href="mailto:info@company.com">ZonaGamer@company.com</a>
+>>>>>>> ff66d95 (Actualizar proyecto final: Terminado carrito y correcciones de archivos .html)
                     <i class="fa fa-phone mx-2"></i>
                     <a class="navbar-sm-brand text-light text-decoration-none" href="tel:010-020-0340">010-020-0340</a>
                 </div>
@@ -49,6 +71,7 @@ https://templatemo.com/tm-559-zay-shop
             </div>
         </div>
     </nav>
+<<<<<<< HEAD
     <!-- Close Top Nav -->
 
 
@@ -58,6 +81,13 @@ https://templatemo.com/tm-559-zay-shop
 
             <a class="navbar-brand text-success logo h1 align-self-center" href="{{ url_for ('home) }}">
                 Zay
+=======
+    <nav class="navbar navbar-expand-lg navbar-light shadow">
+        <div class="container d-flex justify-content-between align-items-center">
+
+            <a class="navbar-brand text-success logo h1 align-self-center" href="{{ url_for('home') }}">
+                Zona Gamer
+>>>>>>> ff66d95 (Actualizar proyecto final: Terminado carrito y correcciones de archivos .html)
             </a>
 
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#templatemo_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -68,6 +98,7 @@ https://templatemo.com/tm-559-zay-shop
                 <div class="flex-fill">
                     <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
                         <li class="nav-item">
+<<<<<<< HEAD
                             <a class="nav-link" href="{{ url_for ('home') }}">Inicio</a>
                         </li>
                         <li class="nav-item">
@@ -78,6 +109,18 @@ https://templatemo.com/tm-559-zay-shop
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{ url_for ('contacto') }}">Contacto</a>
+=======
+                            <a class="nav-link" href="{{ url_for('home') }}">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url_for('sobre_nosotros') }}">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url_for('productos') }}">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url_for('contacto') }}">Contacto</a>
+>>>>>>> ff66d95 (Actualizar proyecto final: Terminado carrito y correcciones de archivos .html)
                         </li>
                     </ul>
                 </div>
@@ -93,7 +136,11 @@ https://templatemo.com/tm-559-zay-shop
                     <a class="nav-icon d-none d-lg-inline" href="#" data-bs-toggle="modal" data-bs-target="#templatemo_search">
                         <i class="fa fa-fw fa-search text-dark mr-2"></i>
                     </a>
+<<<<<<< HEAD
                     <a class="nav-icon position-relative text-decoration-none" href="#">
+=======
+                    <a class="nav-icon position-relative text-decoration-none" href="{{ url_for('ver_carrito') }}">
+>>>>>>> ff66d95 (Actualizar proyecto final: Terminado carrito y correcciones de archivos .html)
                         <i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
                         <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">7</span>
                     </a>
@@ -106,9 +153,12 @@ https://templatemo.com/tm-559-zay-shop
 
         </div>
     </nav>
+<<<<<<< HEAD
     <!-- Close Header -->
 
     <!-- Modal -->
+=======
+>>>>>>> ff66d95 (Actualizar proyecto final: Terminado carrito y correcciones de archivos .html)
     <div class="modal fade bg-white" id="templatemo_search" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
             <div class="w-100 pt-1 mb-5 text-right">
@@ -126,23 +176,31 @@ https://templatemo.com/tm-559-zay-shop
     </div>
 
 
+<<<<<<< HEAD
 
     <!-- Open Content -->
+=======
+>>>>>>> ff66d95 (Actualizar proyecto final: Terminado carrito y correcciones de archivos .html)
     <section class="bg-light">
         <div class="container pb-5">
             <div class="row">
                 <div class="col-lg-5 mt-5">
+<<<<<<< HEAD
                     <div class="card mb-3">
                         <img class="card-img img-fluid" src="assets/img/product_single_10.jpg" alt="Card image cap" id="product-detail">
                     </div>
                     <div class="row">
                         <!--Start Controls-->
+=======
+                    <div class="row">
+>>>>>>> ff66d95 (Actualizar proyecto final: Terminado carrito y correcciones de archivos .html)
                         <div class="col-1 align-self-center">
                             <a href="#multi-item-example" role="button" data-bs-slide="prev">
                                 <i class="text-dark fas fa-chevron-left"></i>
                                 <span class="sr-only">Anterior</span>
                             </a>
                         </div>
+<<<<<<< HEAD
                         <!--End Controls-->
                         <!--Start Carousel Wrapper-->
                         <div id="multi-item-example" class="col-10 carousel slide carousel-multi-item" data-bs-ride="carousel">
@@ -229,6 +287,30 @@ https://templatemo.com/tm-559-zay-shop
                     </div>
                 </div>
                 <!-- col end -->
+=======
+                        <div id="single-item-carousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="row justify-content-center">
+                <div class="col-8">
+                    <a href="#">
+                        <img class="card-img img-fluid" src="{{ producto.imagen_url or url_for('static', filename='assets/img/default.png') }}" alt="Product Image">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+                        <div class="col-1 align-self-center">
+                            <a href="#multi-item-example" role="button" data-bs-slide="next">
+                                <i class="text-dark fas fa-chevron-right"></i>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                        </div>
+                </div>
+>>>>>>> ff66d95 (Actualizar proyecto final: Terminado carrito y correcciones de archivos .html)
                 <div class="col-lg-7 mt-5">
                     <div class="card">
                         <div class="card-body">
@@ -244,6 +326,7 @@ https://templatemo.com/tm-559-zay-shop
                             </p>
                             <ul class="list-inline">
                                 <li class="list-inline-item">
+<<<<<<< HEAD
                                     <h6>Marca:</h6>
                                 </li>
                                 <li class="list-inline-item">
@@ -256,12 +339,27 @@ https://templatemo.com/tm-559-zay-shop
                             <ul class="list-inline">
                                 <li class="list-inline-item">
                                     <h6>Colores disponibles :</h6>
+=======
+                                    <h6>Brand:</h6>
+                                </li>
+                                <li class="list-inline-item">
+                                    <p class="text-muted"><strong></strong></p>
+                                </li>
+                            </ul>
+
+                            <h6>Description:</h6>
+                            <p>{{ producto.descripcion }}</p>
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    <h6>Avaliable Color :</h6>
+>>>>>>> ff66d95 (Actualizar proyecto final: Terminado carrito y correcciones de archivos .html)
                                 </li>
                                 <li class="list-inline-item">
                                     <p class="text-muted"><strong>Blanco / Negro</strong></p>
                                 </li>
                             </ul>
 
+<<<<<<< HEAD
                             <h6>Especificaciones:</h6>
                             <ul class="list-unstyled pb-3">
                                 {% for spec in producto.especificaciones %}
@@ -302,6 +400,67 @@ https://templatemo.com/tm-559-zay-shop
                                         <button type="submit" class="btn btn-success btn-lg" name="submit" value="addtocard">Añadir al carrito</button>
                                     </div>
                                 </div>
+=======
+                            <form action="{{ url_for('carrito') }}" method="POST">
+
+                                <input type="hidden" name="producto_id" value="{{ producto.id }}">
+
+                                <div class="row">
+
+                                    <div class="col-auto">
+                                        <ul class="list-inline pb-3">
+
+                                            <li class="list-inline-item text-right">Cantidad</li>
+
+                                            <li class="list-inline-item">
+                                                <span class="btn btn-success btn-minus">-</span>
+                                            </li>
+
+                                            <li class="list-inline-item">
+                                                <input 
+                                                    type="text" 
+                                                    name="cantidad" 
+                                                    class="var-value"
+                                                    value="1"
+                                                    min="1"
+                                                    max="{{ producto.cantidad }}"
+                                                    style="
+                                                        width: 40px; 
+                                                        text-align: center; 
+                                                        border: none; 
+                                                        padding: 6px;
+                                                        color: #000 !important;
+                                                        background-color: #fff !important;
+                                                    "
+                                                >
+                                            </li>
+
+                                            <li class="list-inline-item">
+                                                <span class="btn btn-success btn-plus">+</span>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+
+                                    <div class="row pb-3">
+
+                                        <div class="col d-grid">
+                                            <button type="submit" class="btn btn-secondary btn-lg" name="submit_type" value="checkout">
+                                                Comprar ahora
+                                            </button>
+                                        </div>
+
+                                        <div class="col d-grid">
+                                            <button type="submit" class="btn btn-success btn-lg" name="submit_type" value="add_to_cart">
+                                                Agregar al carrito
+                                            </button>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+>>>>>>> ff66d95 (Actualizar proyecto final: Terminado carrito y correcciones de archivos .html)
                             </form>
 
                         </div>
@@ -310,6 +469,7 @@ https://templatemo.com/tm-559-zay-shop
             </div>
         </div>
     </section>
+<<<<<<< HEAD
     <!-- Close Content -->
 
     <!-- Start Article -->
@@ -787,11 +947,19 @@ https://templatemo.com/tm-559-zay-shop
 
 
     <!-- Start Footer -->
+=======
+    <section class="py-5">
+
+
+
+    </section>
+>>>>>>> ff66d95 (Actualizar proyecto final: Terminado carrito y correcciones de archivos .html)
     <footer class="bg-dark" id="tempaltemo_footer">
         <div class="container">
             <div class="row">
 
                 <div class="col-md-4 pt-5">
+<<<<<<< HEAD
                     <h2 class="h2 text-success border-bottom pb-3 border-light logo">ZonaGamer</h2>
                     <ul class="list-unstyled text-light footer-link-list">
                         <li>
@@ -819,12 +987,41 @@ https://templatemo.com/tm-559-zay-shop
                         <li><a class="text-decoration-none" href="#">Tarjetas de video</a></li>
                         <li><a class="text-decoration-none" href="#">Procesadores</a></li>
                         <li><a class="text-decoration-none" href="#">Mouse</a></li>
+=======
+                    <h2 class="h2 text-success border-bottom pb-3 border-light logo">Zona Gamer</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li>
+                            <i class="fas fa-map-marker-alt fa-fw"></i>
+                            Av. Paseo Colon 850
+                        </li>
+                        <li>
+                            <i class="fa fa-phone fa-fw"></i>
+                            <a class="text-decoration-none" href="tel:010-020-0340">010-6020-5689</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-envelope fa-fw"></i>
+                            <a class="text-decoration-none" href="mailto:info@company.com">ZonaGamer@company.com</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-light border-bottom pb-3 border-light">Productos</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li><a class="text-decoration-none" href="{{ url_for('productos', categoria='headset') }}">Headset</a></li>
+                        <li><a class="text-decoration-none" href="{{ url_for('productos', categoria='mouse') }}">Mouse</a></li>
+                        <li><a class="text-decoration-none" href="{{ url_for('productos', categoria='teclados') }}">Teclados</a></li>
+                        <li><a class="text-decoration-none" href="{{ url_for('productos', categoria='placas de video') }}">Placas de video</a></li>
+                        <li><a class="text-decoration-none" href="{{ url_for('productos', categoria='extras') }}">Extras</a></li>
+                        <li><a class="text-decoration-none" href="{{ url_for('productos', categoria='joystciks') }}">Joysticks</a></li>
+                        <li><a class="text-decoration-none" href="{{ url_for('productos', categoria='equipos') }}">Equipos</a></li>
+>>>>>>> ff66d95 (Actualizar proyecto final: Terminado carrito y correcciones de archivos .html)
                     </ul>
                 </div>
 
                 <div class="col-md-4 pt-5">
                     <h2 class="h2 text-light border-bottom pb-3 border-light">Mas informacion</h2>
                     <ul class="list-unstyled text-light footer-link-list">
+<<<<<<< HEAD
                         <li><a class="text-decoration-none" href="#">Inicio</a></li>
                         <li><a class="text-decoration-none" href="#">Sobre nosotros</a></li>
                         <li><a class="text-decoration-none" href="#">Sucursales</a></li>
@@ -833,6 +1030,15 @@ https://templatemo.com/tm-559-zay-shop
                     </ul>
                 </div>
 
+=======
+                        <li><a class="text-decoration-none" href="{{ url_for('home') }}">Inicio</a></li>
+                        <li><a class="text-decoration-none" href="{{ url_for('sobre_nosotros') }}">Sobre nosotros</a></li>
+                        <li><a class="text-decoration-none" href="{{ url_for('contacto') }}">Contacto</a></li>
+                    </ul>
+                </div>
+
+
+>>>>>>> ff66d95 (Actualizar proyecto final: Terminado carrito y correcciones de archivos .html)
             </div>
 
             <div class="row text-light mb-4">
@@ -842,29 +1048,48 @@ https://templatemo.com/tm-559-zay-shop
                 <div class="col-auto me-auto">
                     <ul class="list-inline text-left footer-icons">
                         <li class="list-inline-item border border-light rounded-circle text-center">
+<<<<<<< HEAD
                             <a class="text-light text-decoration-none" target="_blank" href="http://facebook.com/ZonaGamer"><i class="fab fa-facebook-f fa-lg fa-fw"></i></a>
+=======
+                            <a rel="nofollow" class="text-light text-decoration-none" target="_blank" href="http://fb.com/ZonaGamer"><i class="fab fa-facebook-f fa-lg fa-fw"></i></a>
+>>>>>>> ff66d95 (Actualizar proyecto final: Terminado carrito y correcciones de archivos .html)
                         </li>
                         <li class="list-inline-item border border-light rounded-circle text-center">
                             <a class="text-light text-decoration-none" target="_blank" href="https://www.instagram.com/ZonaGamer"><i class="fab fa-instagram fa-lg fa-fw"></i></a>
                         </li>
                         <li class="list-inline-item border border-light rounded-circle text-center">
+<<<<<<< HEAD
                             <a class="text-light text-decoration-none" target="_blank" href="https://twitter.com/ZonaGamerOk"><i class="fab fa-twitter fa-lg fa-fw"></i></a>
                         </li>
                         <li class="list-inline-item border border-light rounded-circle text-center">
                             <a class="text-light text-decoration-none" target="_blank" href="https://www.linkedin.com/ZonaGamer_"><i class="fab fa-linkedin fa-lg fa-fw"></i></a>
+=======
+                            <a class="text-light text-decoration-none" target="_blank" href="https://twitter.com/ZonaGamer"><i class="fab fa-twitter fa-lg fa-fw"></i></a>
+                        </li>
+                        <li class="list-inline-item border border-light rounded-circle text-center">
+                            <a class="text-light text-decoration-none" target="_blank" href="https://www.linkedin.com/ZonaGamer"><i class="fab fa-linkedin fa-lg fa-fw"></i></a>
+>>>>>>> ff66d95 (Actualizar proyecto final: Terminado carrito y correcciones de archivos .html)
                         </li>
                     </ul>
                 </div>
                 <div class="col-auto">
+<<<<<<< HEAD
                     <label class="sr-only" for="subscribeEmail">Direccion de Email</label>
                     <div class="input-group mb-2">
                         <input type="text" class="form-control bg-dark border-light" id="subscribeEmail" placeholder="Email address">
                         <div class="input-group-text btn-success text-light">Suscribirse</div>
+=======
+                    <label class="sr-only" for="subscribeEmail">Tu email</label>
+                    <div class="input-group mb-2">
+                        <input type="text" class="form-control bg-dark border-light" id="subscribeEmail" placeholder="Email address">
+                        <div class="input-group-text btn-success text-light">Subscribite</div>
+>>>>>>> ff66d95 (Actualizar proyecto final: Terminado carrito y correcciones de archivos .html)
                     </div>
                 </div>
             </div>
         </div>
 
+<<<<<<< HEAD
         <div class="w-100 bg-black py-3">
             <div class="container">
                 <div class="row pt-2">
@@ -891,6 +1116,16 @@ https://templatemo.com/tm-559-zay-shop
 
     <!-- Start Slider Script -->
     <script src="{{ url_for('static', filename='js/slick.min.js') }}"></script>
+=======
+
+    </footer>
+    <script src="{{ url_for('static', filename='assets/js/jquery-1.11.0.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/js/jquery-migrate-1.2.1.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/js/templatemo.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/js/custom.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/js/slick.min.js') }}"></script>
+>>>>>>> ff66d95 (Actualizar proyecto final: Terminado carrito y correcciones de archivos .html)
     <script>
         $('#carousel-related-product').slick({
             infinite: true,
@@ -922,8 +1157,57 @@ https://templatemo.com/tm-559-zay-shop
             ]
         });
     </script>
+<<<<<<< HEAD
     <!-- End Slider Script -->
 
 </body>
+=======
+
+        <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const quantityGroups = document.querySelectorAll("ul.list-inline");
+
+            quantityGroups.forEach(group => {
+
+                const minusBtn = group.querySelector(".btn-minus");
+                const plusBtn = group.querySelector(".btn-plus");
+                const quantityInput = group.querySelector(".var-value");
+
+                if (!minusBtn || !plusBtn || !quantityInput) return;
+
+                const maxQuantity = parseInt(quantityInput.getAttribute("max")) || 99;
+
+                function getCurrentValue() {
+                    let val = parseInt(quantityInput.value);
+                    if (isNaN(val) || val < 1) return 1;
+                    if (val > maxQuantity) return maxQuantity;
+                    return val;
+                }
+
+                minusBtn.addEventListener("click", () => {
+                    let currentValue = getCurrentValue();
+                    if (currentValue > 1) {
+                        quantityInput.value = currentValue - 1;
+                    }
+                });
+
+                plusBtn.addEventListener("click", () => {
+                    let currentValue = getCurrentValue();
+                    if (currentValue < maxQuantity) {
+                        quantityInput.value = currentValue + 1;
+                    }
+                });
+
+                quantityInput.addEventListener("change", () => {
+                    quantityInput.value = getCurrentValue();
+                });
+
+                quantityInput.value = getCurrentValue();
+            });
+        });
+        </script>
+    </body>
+>>>>>>> ff66d95 (Actualizar proyecto final: Terminado carrito y correcciones de archivos .html)
 
 </html>

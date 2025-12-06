@@ -2,10 +2,11 @@
 <html lang="en">
 
 <head>
-    <title>Zay Shop - About Page</title>
+    <title>ZonaGamer - Sobre nosotros</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+<<<<<<< HEAD
     <link rel="apple-touch-icon" href="{{ url_for('static', filename='img/apple-icon.png') }}">
     <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='img/favicon.ico') }}">
 
@@ -16,6 +17,18 @@
     <!-- Load fonts style after rendering the layout styles -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/fontawesome.min.css') }}">
+=======
+    <link rel="apple-touch-icon" href="{{ url_for('static', filename='assets/img/apple-icon.png') }}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='img/favicon.ico') }}">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/templatemo.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/custom.css') }}">
+
+    <!-- Load fonts style after rendering the layout styles -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/fontawesome.min.css') }}">
+>>>>>>> ff66d95 (Actualizar proyecto final: Terminado carrito y correcciones de archivos .html)
 </head>
 
 <body>
@@ -45,7 +58,11 @@
         <div class="container d-flex justify-content-between align-items-center">
 
             <a class="navbar-brand text-success logo h1 align-self-center" href="{{ url_for('home') }}">
+<<<<<<< HEAD
                 Zay
+=======
+                ZonaGamer
+>>>>>>> ff66d95 (Actualizar proyecto final: Terminado carrito y correcciones de archivos .html)
             </a>
 
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" 
@@ -85,7 +102,7 @@
                        data-bs-target="#templatemo_search">
                         <i class="fa fa-fw fa-search text-dark mr-2"></i>
                     </a>
-                    <a class="nav-icon position-relative text-decoration-none" href="#">
+                    <a class="nav-icon position-relative text-decoration-none" href="{{ url_for('ver_carrito') }}">
                         <i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
                         <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">7</span>
                     </a>
@@ -122,17 +139,32 @@
         <div class="container">
             <div class="row align-items-center py-5">
                 <div class="col-md-8 text-white">
+<<<<<<< HEAD
                     <h1>About Us</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
                 </div>
                 <div class="col-md-4">
                     <img src="{{ url_for('static', filename='img/about-hero.svg') }}" alt="About Hero">
+=======
+                    <h1>Sobre nosotros</h1>
+                    <p>En ZonaGamer somos apasionados por la tecnología y comprometidos con ofrecer la mejor experiencia de compra en el mundo del hardware y los periféricos para PC. Nacimos con el objetivo de acercar productos de alta calidad a usuarios que buscan rendimiento, confiabilidad y un servicio transparente.
+
+Creemos que cada cliente tiene necesidades únicas, por eso brindamos asesoramiento personalizado y soluciones pensadas a medida, ya sea para armar una PC desde cero, actualizar equipos existentes o encontrar el periférico ideal para mejorar tu setup.
+
+Nuestra misión es combinar excelente atención, variedad de productos, precios competitivos y un soporte técnico profesional que acompañe al usuario en todo el proceso, desde la elección hasta el uso diario de su equipo.
+
+Con años de experiencia en el rubro y un equipo en constante capacitación, trabajamos día a día para ser tu tienda de confianza y un aliado en cada proyecto tecnológico que emprendas.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="{{ url_for('static', filename='assets/img/about-hero.svg') }}" width=350 alt="About Hero">
+>>>>>>> ff66d95 (Actualizar proyecto final: Terminado carrito y correcciones de archivos .html)
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Services -->
+<<<<<<< HEAD
     <section class="container py-5">
         <div class="row text-center pt-5 pb-3">
             <div class="col-lg-6 m-auto">
@@ -158,6 +190,27 @@
                 </div>
             </div>
 
+=======
+<section class="container py-5">
+    <div class="row text-center pt-5 pb-3">
+        <div class="col-lg-6 m-auto">
+            <h1 class="h1">Nuestros servicios</h1>
+            <p class="text-center">
+                En ZonaGamer ofrecemos una experiencia completa para que encuentres exactamente lo que necesitás para potenciar tu setup. Nos enfocamos en brindar calidad, asesoramiento y soluciones a medida para cada tipo de usuario, desde gamers y creadores de contenido hasta profesionales y empresas.
+
+                Diseñamos y armamos tu PC ideal según tu presupuesto y necesidades. Te asesoramos en la elección de cada componente para garantizar el mejor rendimiento, compatibilidad y durabilidad.
+
+                Contamos con un amplio catálogo de procesadores, placas de video, memorias RAM, gabinetes, fuentes, monitores, teclados, mouse, auriculares y más. Trabajamos con marcas reconocidas para asegurar productos confiables y de excelente desempeño.
+
+                ¿Tu PC está lenta o quedó desactualizada? Evaluamos tu equipo y te recomendamos las mejores mejoras para recuperar rendimiento sin necesidad de cambiar todo el sistema.
+
+                Brindamos servicio de diagnóstico, mantenimiento y reparación para que tu equipo funcione siempre al máximo. Instalación de sistemas operativos, limpieza interna, reemplazo de componentes y más.
+
+                Si no sabés qué comprar, te ayudamos a elegir la opción ideal según tu uso: gaming, trabajo, edición, streaming o estudio. Nuestro objetivo es que adquieras exactamente lo que necesitás, sin pagar de más.
+            </p>
+        </div>
+    </div>
+>>>>>>> ff66d95 (Actualizar proyecto final: Terminado carrito y correcciones de archivos .html)
             <!-- Service 3 -->
             <div class="col-md-6 col-lg-3 pb-5">
                 <div class="h-100 py-5 services-icon-wap shadow">
@@ -170,7 +223,7 @@
             <div class="col-md-6 col-lg-3 pb-5">
                 <div class="h-100 py-5 services-icon-wap shadow">
                     <div class="h1 text-success text-center"><i class="fa fa-user"></i></div>
-                    <h2 class="h5 mt-4 text-center">24 Hours Service</h2>
+                    <h2 class="h5 mt-4 text-center">Servicio 24hs</h2>
                 </div>
             </div>
         </div>
@@ -181,8 +234,13 @@
         <div class="container my-4">
             <div class="row text-center py-3">
                 <div class="col-lg-6 m-auto">
+<<<<<<< HEAD
                     <h1 class="h1">Our Brands</h1>
                     <p>Lorem ipsum dolor sit amet...</p>
+=======
+                    <h1 class="h1">Nuestras marcas</h1>
+                    <p></p>
+>>>>>>> ff66d95 (Actualizar proyecto final: Terminado carrito y correcciones de archivos .html)
                 </div>
 
                 <div class="col-lg-9 m-auto tempaltemo-carousel">
@@ -204,6 +262,7 @@
                                         <div class="row">
                                             <div class="col-3 p-md-5">
                                                 <img class="img-fluid brand-img" 
+<<<<<<< HEAD
                                                      src="{{ url_for('static', filename='img/brand_01.png') }}">
                                             </div>
                                             <div class="col-3 p-md-5">
@@ -217,6 +276,21 @@
                                             <div class="col-3 p-md-5">
                                                 <img class="img-fluid brand-img" 
                                                      src="{{ url_for('static', filename='img/brand_04.png') }}">
+=======
+                                                     src="{{ url_for('static', filename='assets/img/brand_01.png') }}">
+                                            </div>
+                                            <div class="col-3 p-md-5">
+                                                <img class="img-fluid brand-img" 
+                                                     src="{{ url_for('static', filename='assets/img/brand_02.png') }}">
+                                            </div>
+                                            <div class="col-3 p-md-5">
+                                                <img class="img-fluid brand-img" 
+                                                     src="{{ url_for('static', filename='assets/img/brand_03.png') }}">
+                                            </div>
+                                            <div class="col-3 p-md-5">
+                                                <img class="img-fluid brand-img" 
+                                                     src="{{ url_for('static', filename='assets/img/brand_04.png') }}">
+>>>>>>> ff66d95 (Actualizar proyecto final: Terminado carrito y correcciones de archivos .html)
                                             </div>
                                         </div>
                                     </div>
@@ -227,6 +301,7 @@
                                         <div class="row">
                                             <div class="col-3 p-md-5">
                                                 <img class="img-fluid brand-img" 
+<<<<<<< HEAD
                                                      src="{{ url_for('static', filename='img/brand_01.png') }}">
                                             </div>
                                             <div class="col-3 p-md-5">
@@ -240,6 +315,21 @@
                                             <div class="col-3 p-md-5">
                                                 <img class="img-fluid brand-img" 
                                                      src="{{ url_for('static', filename='img/brand_04.png') }}">
+=======
+                                                     src="{{ url_for('static', filename='assets/img/brand_01.png') }}">
+                                            </div>
+                                            <div class="col-3 p-md-5">
+                                                <img class="img-fluid brand-img" 
+                                                     src="{{ url_for('static', filename='assets/img/brand_02.png') }}">
+                                            </div>
+                                            <div class="col-3 p-md-5">
+                                                <img class="img-fluid brand-img" 
+                                                     src="{{ url_for('static', filename='assets/img/brand_03.png') }}">
+                                            </div>
+                                            <div class="col-3 p-md-5">
+                                                <img class="img-fluid brand-img" 
+                                                     src="{{ url_for('static', filename='assets/img/brand_04.png') }}">
+>>>>>>> ff66d95 (Actualizar proyecto final: Terminado carrito y correcciones de archivos .html)
                                             </div>
                                         </div>
                                     </div>
@@ -268,37 +358,52 @@
             <div class="row">
 
                 <div class="col-md-4 pt-5">
-                    <h2 class="h2 text-success border-bottom pb-3 border-light logo">Zay Shop</h2>
+                    <h2 class="h2 text-success border-bottom pb-3 border-light logo">ZonaGamer</h2>
                     <ul class="list-unstyled text-light footer-link-list">
+<<<<<<< HEAD
                         <li><i class="fas fa-map-marker-alt fa-fw"></i> 123 Consectetur at ligula 10660</li>
                         <li><i class="fa fa-phone fa-fw"></i>
                             <a class="text-decoration-none" href="tel:010-020-0340">010-020-0340</a></li>
                         <li><i class="fa fa-envelope fa-fw"></i>
                             <a class="text-decoration-none" href="mailto:info@company.com">info@company.com</a></li>
+=======
+                        <li><i class="fas fa-map-marker-alt fa-fw"></i> Av. Paseo Colon 850</li>
+                        <li><i class="fa fa-phone fa-fw"></i>
+                            <a class="text-decoration-none" href="tel:010-020-0340">010-020-0340</a></li>
+                        <li><i class="fa fa-envelope fa-fw"></i>
+                            <a class="text-decoration-none" href="mailto:info@company.com">ZonaGamer@company.com</a></li>
+>>>>>>> ff66d95 (Actualizar proyecto final: Terminado carrito y correcciones de archivos .html)
                     </ul>
                 </div>
 
                 <div class="col-md-4 pt-5">
-                    <h2 class="h2 text-light border-bottom pb-3 border-light">Products</h2>
+                    <h2 class="h2 text-light border-bottom pb-3 border-light">Productos</h2>
                     <ul class="list-unstyled text-light footer-link-list">
-                        <li><a class="text-decoration-none" href="#">Luxury</a></li>
-                        <li><a class="text-decoration-none" href="#">Sport Wear</a></li>
-                        <li><a class="text-decoration-none" href="#">Men's Shoes</a></li>
-                        <li><a class="text-decoration-none" href="#">Women's Shoes</a></li>
-                        <li><a class="text-decoration-none" href="#">Popular Dress</a></li>
-                        <li><a class="text-decoration-none" href="#">Gym Accessories</a></li>
-                        <li><a class="text-decoration-none" href="#">Sport Shoes</a></li>
+                            <li><a class="text-decoration-none" href="{{ url_for('productos', categoria='headset') }}">Headset</a></li>
+                            <li><a class="text-decoration-none" href="{{ url_for('productos', categoria='mouse') }}">Mouse</a></li>
+                            <li><a class="text-decoration-none" href="{{ url_for('productos', categoria='teclados') }}">Teclado</a></li>
+                            <li><a class="text-decoration-none" href="{{ url_for('productos', categoria='placas') }}">Placas de video</a></li>
+                            <li><a class="text-decoration-none" href="{{ url_for('productos', categoria='extras') }}">Extras</a></li>
+                            <li><a class="text-decoration-none" href="{{ url_for('productos', categoria='joysticks') }}">Joysticks</a></li>
+                            <li><a class="text-decoration-none" href="{{ url_for('productos', categoria='equipos') }}">Equipos</a></li>
                     </ul>
                 </div>
 
                 <div class="col-md-4 pt-5">
                     <h2 class="h2 text-light border-bottom pb-3 border-light">Further Info</h2>
                     <ul class="list-unstyled text-light footer-link-list">
+<<<<<<< HEAD
                         <li><a class="text-decoration-none" href="{{ url_for('home') }}">Home</a></li>
                         <li><a class="text-decoration-none" href="{{ url_for('sobre_nosotros') }}">About Us</a></li>
                         <li><a class="text-decoration-none" href="#">Shop Locations</a></li>
                         <li><a class="text-decoration-none" href="#">FAQs</a></li>
                         <li><a class="text-decoration-none" href="{{ url_for('contacto') }}">Contact</a></li>
+=======
+                        <li><a class="text-decoration-none" href="{{ url_for('home') }}">Inicio</a></li>
+                        <li><a class="text-decoration-none" href="{{ url_for('sobre_nosotros') }}">Sobre nosotros</a></li>
+                        <li><a class="text-decoration-none" href="#">Sucursales</a></li>
+                        <li><a class="text-decoration-none" href="{{ url_for('contacto') }}">Contacto</a></li>
+>>>>>>> ff66d95 (Actualizar proyecto final: Terminado carrito y correcciones de archivos .html)
                     </ul>
                 </div>
 
@@ -312,25 +417,41 @@
                 <div class="col-auto me-auto">
                     <ul class="list-inline text-left footer-icons">
                         <li class="list-inline-item border border-light rounded-circle text-center">
+<<<<<<< HEAD
                             <a class="text-light text-decoration-none" target="_blank" href="http://fb.com/templatemo">
+=======
+                            <a class="text-light text-decoration-none" target="_blank" href="http://fb.com/ZonaGamer">
+>>>>>>> ff66d95 (Actualizar proyecto final: Terminado carrito y correcciones de archivos .html)
                                 <i class="fab fa-facebook-f fa-lg fa-fw"></i>
                             </a>
                         </li>
 
                         <li class="list-inline-item border border-light rounded-circle text-center">
+<<<<<<< HEAD
                             <a class="text-light text-decoration-none" target="_blank" href="https://www.instagram.com/">
+=======
+                            <a class="text-light text-decoration-none" target="_blank" href="https://www.instagram.com/ZonaGamer">
+>>>>>>> ff66d95 (Actualizar proyecto final: Terminado carrito y correcciones de archivos .html)
                                 <i class="fab fa-instagram fa-lg fa-fw"></i>
                             </a>
                         </li>
 
                         <li class="list-inline-item border border-light rounded-circle text-center">
+<<<<<<< HEAD
                             <a class="text-light text-decoration-none" target="_blank" href="https://twitter.com/">
+=======
+                            <a class="text-light text-decoration-none" target="_blank" href="https://twitter.com/ZonaGamer">
+>>>>>>> ff66d95 (Actualizar proyecto final: Terminado carrito y correcciones de archivos .html)
                                 <i class="fab fa-twitter fa-lg fa-fw"></i>
                             </a>
                         </li>
 
                         <li class="list-inline-item border border-light rounded-circle text-center">
+<<<<<<< HEAD
                             <a class="text-light text-decoration-none" target="_blank" href="https://www.linkedin.com/">
+=======
+                            <a class="text-light text-decoration-none" target="_blank" href="https://www.linkedin.com/ZonaGamer">
+>>>>>>> ff66d95 (Actualizar proyecto final: Terminado carrito y correcciones de archivos .html)
                                 <i class="fab fa-linkedin fa-lg fa-fw"></i>
                             </a>
                         </li>
@@ -344,6 +465,7 @@
                         <div class="input-group-text btn-success text-light">Subscribe</div>
                     </div>
                 </div>
+<<<<<<< HEAD
 
             </div>
         </div>
@@ -354,17 +476,28 @@
                     Copyright &copy; 2021 
                     | Designed by <a href="https://templatemo.com/page/1" target="_blank">TemplateMo</a>
                 </p>
+=======
+
+>>>>>>> ff66d95 (Actualizar proyecto final: Terminado carrito y correcciones de archivos .html)
             </div>
         </div>
 
     </footer>
 
     <!-- Start Script -->
+<<<<<<< HEAD
     <script src="{{ url_for('static', filename='js/jquery-1.11.0.min.js') }}"></script>
     <script src="{{ url_for('static', filename='js/jquery-migrate-1.2.1.min.js') }}"></script>
     <script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
     <script src="{{ url_for('static', filename='js/templatemo.js') }}"></script>
     <script src="{{ url_for('static', filename='js/custom.js') }}"></script>
+=======
+    <script src="{{ url_for('static', filename='assets/js/jquery-1.11.0.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/js/jquery-migrate-1.2.1.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/js/templatemo.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/js/custom.js') }}"></script>
+>>>>>>> ff66d95 (Actualizar proyecto final: Terminado carrito y correcciones de archivos .html)
     <!-- End Script -->
 </body>
 

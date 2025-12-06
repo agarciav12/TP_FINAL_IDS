@@ -2,11 +2,12 @@
 <html lang="en">
 
 <head>
-    <title>Zay Shop - Contact</title>
+    <title>ZonaGamer - Contacto</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="apple-touch-icon" href="{{ url_for('static', filename='img/apple-icon.png') }}">
+<<<<<<< HEAD
     <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='img/favicon.ico') }}">
 
     <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
@@ -16,6 +17,17 @@
     <!-- Load fonts style after rendering the layout styles -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/fontawesome.min.css') }}">
+=======
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='assets/img/favicon.ico') }}">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/templatemo.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/custom.css') }}">
+
+    <!-- Load fonts style after rendering the layout styles -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/fontawesome.min.css') }}">
+>>>>>>> ff66d95 (Actualizar proyecto final: Terminado carrito y correcciones de archivos .html)
 
     <!-- Load map styles -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
@@ -31,7 +43,7 @@
             <div class="w-100 d-flex justify-content-between">
                 <div>
                     <i class="fa fa-envelope mx-2"></i>
-                    <a class="navbar-sm-brand text-light text-decoration-none" href="mailto:info@company.com">info@company.com</a>
+                    <a class="navbar-sm-brand text-light text-decoration-none" href="mailto:info@company.com">info@ZonaGamer.com</a>
                     <i class="fa fa-phone mx-2"></i>
                     <a class="navbar-sm-brand text-light text-decoration-none" href="tel:010-020-0340">010-020-0340</a>
                 </div>
@@ -52,7 +64,11 @@
         <div class="container d-flex justify-content-between align-items-center">
 
             <a class="navbar-brand text-success logo h1 align-self-center" href="{{ url_for('home') }}">
+<<<<<<< HEAD
                 Zay
+=======
+                ZonaGamer
+>>>>>>> ff66d95 (Actualizar proyecto final: Terminado carrito y correcciones de archivos .html)
             </a>
 
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#templatemo_main_nav"
@@ -66,6 +82,7 @@
                 <div class="flex-fill">
                     <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
                         <li class="nav-item">
+<<<<<<< HEAD
                             <a class="nav-link" href="{{ url_for('home') }}">Home</a>
                         </li>
                         <li class="nav-item">
@@ -76,6 +93,18 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{ url_for('contact') }}">Contact</a>
+=======
+                            <a class="nav-link" href="{{ url_for('home') }}">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url_for('sobre_nosotros') }}">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url_for('productos') }}">Producto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url_for('contacto') }}">Contacto</a>
+>>>>>>> ff66d95 (Actualizar proyecto final: Terminado carrito y correcciones de archivos .html)
                         </li>
                     </ul>
                 </div>
@@ -92,7 +121,7 @@
                     <a class="nav-icon d-none d-lg-inline" href="#" data-bs-toggle="modal" data-bs-target="#templatemo_search">
                         <i class="fa fa-fw fa-search text-dark mr-2"></i>
                     </a>
-                    <a class="nav-icon position-relative text-decoration-none" href="#">
+                    <a class="nav-icon position-relative text-decoration-none" href="{{ url_for('ver_carrito') }}">
                         <i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
                         <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">7</span>
                     </a>
@@ -130,13 +159,20 @@
     <!-- Start Content Page -->
     <div class="container-fluid bg-light py-5">
         <div class="col-md-6 m-auto text-center">
+<<<<<<< HEAD
             <h1 class="h1">Contact Us</h1>
             <p>Proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet.</p>
+=======
+            <h1 class="h1">Contactanos!</h1>
+            <p>¿Tenés dudas, necesitás asesoramiento o querés cotizar tu próxima PC? Estamos para ayudarte.
+Escribinos por nuestros canales de atención y te responderemos a la brevedad. ¡Tu próxima mejora está a un mensaje de distancia!</p>
+>>>>>>> ff66d95 (Actualizar proyecto final: Terminado carrito y correcciones de archivos .html)
         </div>
     </div>
 
     <!-- Start Map -->
     <div id="mapid" style="width: 100%; height: 300px;"></div>
+<<<<<<< HEAD
 
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
             integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
@@ -153,11 +189,38 @@
             id: 'mapbox/streets-v11',
             tileSize: 512,
             zoomOffset: -1
+=======
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+
+    <script>
+        
+        const LATITUD = -34.6037;
+        const LONGITUD = -58.3816;
+        const ZOOM_INICIAL = 13; 
+       
+        var mymap = L.map('mapid').setView([LATITUD, LONGITUD], ZOOM_INICIAL);
+
+       
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+>>>>>>> ff66d95 (Actualizar proyecto final: Terminado carrito y correcciones de archivos .html)
         }).addTo(mymap);
 
-        L.marker([-23.013104, -43.394365, 13]).addTo(mymap)
-            .bindPopup("<b>Zay</b> eCommerce Template<br />Location.").openPopup();
+  
+        L.marker([LATITUD, LONGITUD]).addTo(mymap)
+            .bindPopup(
+                `<b>Zona Gamer - Sucursal Central</b><br>
+                Av. Paseo Colon 850<br>
+                <a href="https://www.google.com/maps/search/?api=1&query=${LATITUD},${LONGITUD}" target="_blank">
+                    Ver ubicación en Google Maps
+                </a>`
+            ).openPopup();
 
+  
         mymap.scrollWheelZoom.disable();
         mymap.touchZoom.disable();
     </script>
@@ -170,7 +233,11 @@
             <form class="col-md-9 m-auto" method="post" role="form">
                 <div class="row">
                     <div class="form-group col-md-6 mb-3">
+<<<<<<< HEAD
                         <label>Name</label>
+=======
+                        <label>Nombre</label>
+>>>>>>> ff66d95 (Actualizar proyecto final: Terminado carrito y correcciones de archivos .html)
                         <input type="text" class="form-control mt-1" id="name" name="name" placeholder="Name">
                     </div>
                     <div class="form-group col-md-6 mb-3">
@@ -180,18 +247,26 @@
                 </div>
 
                 <div class="mb-3">
+<<<<<<< HEAD
                     <label>Subject</label>
+=======
+                    <label>Asunto</label>
+>>>>>>> ff66d95 (Actualizar proyecto final: Terminado carrito y correcciones de archivos .html)
                     <input type="text" class="form-control mt-1" id="subject" name="subject" placeholder="Subject">
                 </div>
 
                 <div class="mb-3">
+<<<<<<< HEAD
                     <label>Message</label>
+=======
+                    <label>Mensaje</label>
+>>>>>>> ff66d95 (Actualizar proyecto final: Terminado carrito y correcciones de archivos .html)
                     <textarea class="form-control mt-1" id="message" name="message" placeholder="Message" rows="8"></textarea>
                 </div>
 
                 <div class="row">
                     <div class="col text-end mt-2">
-                        <button type="submit" class="btn btn-success btn-lg px-3">Let’s Talk</button>
+                        <button type="submit" class="btn btn-success btn-lg px-3">Hablanos!</button>
                     </div>
                 </div>
             </form>
@@ -206,39 +281,53 @@
             <div class="row">
 
                 <div class="col-md-4 pt-5">
-                    <h2 class="h2 text-success border-bottom pb-3 border-light logo">Zay Shop</h2>
+                    <h2 class="h2 text-success border-bottom pb-3 border-light logo">ZonaGamer</h2>
                     <ul class="list-unstyled text-light footer-link-list">
+<<<<<<< HEAD
                         <li><i class="fas fa-map-marker-alt fa-fw"></i> 123 Consectetur at ligula 10660</li>
+=======
+                        <li><i class="fas fa-map-marker-alt fa-fw"></i> Av. Paseo Colon 850</li>
+>>>>>>> ff66d95 (Actualizar proyecto final: Terminado carrito y correcciones de archivos .html)
                         <li><i class="fa fa-phone fa-fw"></i>
                             <a class="text-decoration-none" href="tel:010-020-0340">010-020-0340</a>
                         </li>
                         <li><i class="fa fa-envelope fa-fw"></i>
+<<<<<<< HEAD
                             <a class="text-decoration-none" href="mailto:info@company.com">info@company.com</a>
+=======
+                            <a class="text-decoration-none" href="mailto:info@company.com">ZonaGamer@company.com</a>
+>>>>>>> ff66d95 (Actualizar proyecto final: Terminado carrito y correcciones de archivos .html)
                         </li>
                     </ul>
                 </div>
 
                 <div class="col-md-4 pt-5">
-                    <h2 class="h2 text-light border-bottom pb-3 border-light">Products</h2>
+                    <h2 class="h2 text-light border-bottom pb-3 border-light">Productos</h2>
                     <ul class="list-unstyled text-light footer-link-list">
-                        <li><a class="text-decoration-none" href="#">Luxury</a></li>
-                        <li><a class="text-decoration-none" href="#">Sport Wear</a></li>
-                        <li><a class="text-decoration-none" href="#">Men's Shoes</a></li>
-                        <li><a class="text-decoration-none" href="#">Women's Shoes</a></li>
-                        <li><a class="text-decoration-none" href="#">Popular Dress</a></li>
-                        <li><a class="text-decoration-none" href="#">Gym Accessories</a></li>
-                        <li><a class="text-decoration-none" href="#">Sport Shoes</a></li>
+                            <li><a class="text-decoration-none" href="{{ url_for('productos', categoria='headset') }}">Headset</a></li>
+                            <li><a class="text-decoration-none" href="{{ url_for('productos', categoria='mouse') }}">Mouse</a></li>
+                            <li><a class="text-decoration-none" href="{{ url_for('productos', categoria='teclados') }}">Teclado</a></li>
+                            <li><a class="text-decoration-none" href="{{ url_for('productos', categoria='placas') }}">Placas de video</a></li>
+                            <li><a class="text-decoration-none" href="{{ url_for('productos', categoria='extras') }}">Extras</a></li>
+                            <li><a class="text-decoration-none" href="{{ url_for('productos', categoria='joysticks') }}">Joysticks</a></li>
+                            <li><a class="text-decoration-none" href="{{ url_for('productos', categoria='equipos') }}">Equipos</a></li>
                     </ul>
                 </div>
 
                 <div class="col-md-4 pt-5">
-                    <h2 class="h2 text-light border-bottom pb-3 border-light">Further Info</h2>
+                    <h2 class="h2 text-light border-bottom pb-3 border-light">Mas informacion</h2>
                     <ul class="list-unstyled text-light footer-link-list">
+<<<<<<< HEAD
                         <li><a class="text-decoration-none" href="{{ url_for('home') }}">Home</a></li>
                         <li><a class="text-decoration-none" href="{{ url_for('about') }}">About Us</a></li>
                         <li><a class="text-decoration-none" href="#">Shop Locations</a></li>
                         <li><a class="text-decoration-none" href="#">FAQs</a></li>
                         <li><a class="text-decoration-none" href="{{ url_for('contact') }}">Contact</a></li>
+=======
+                        <li><a class="text-decoration-none" href="{{ url_for('home') }}">Inicio</a></li>
+                        <li><a class="text-decoration-none" href="{{ url_for('sobre_nosotros') }}">Sobre nosotros</a></li>
+                        <li><a class="text-decoration-none" href="{{ url_for('contacto') }}">Contacto</a></li>
+>>>>>>> ff66d95 (Actualizar proyecto final: Terminado carrito y correcciones de archivos .html)
                     </ul>
                 </div>
 
@@ -252,30 +341,47 @@
                 <div class="col-auto me-auto">
                     <ul class="list-inline text-left footer-icons">
                         <li class="list-inline-item border border-light rounded-circle text-center">
+<<<<<<< HEAD
                             <a class="text-light text-decoration-none" target="_blank" href="http://facebook.com/">
+=======
+                            <a class="text-light text-decoration-none" target="_blank" href="http://facebook.com/ZonaGamer">
+>>>>>>> ff66d95 (Actualizar proyecto final: Terminado carrito y correcciones de archivos .html)
                                 <i class="fab fa-facebook-f fa-lg fa-fw"></i>
                             </a>
                         </li>
 
                         <li class="list-inline-item border border-light rounded-circle text-center">
+<<<<<<< HEAD
                             <a class="text-light text-decoration-none" target="_blank" href="https://www.instagram.com/">
+=======
+                            <a class="text-light text-decoration-none" target="_blank" href="https://www.instagram.com/ZonaGamer">
+>>>>>>> ff66d95 (Actualizar proyecto final: Terminado carrito y correcciones de archivos .html)
                                 <i class="fab fa-instagram fa-lg fa-fw"></i>
                             </a>
                         </li>
 
                         <li class="list-inline-item border border-light rounded-circle text-center">
+<<<<<<< HEAD
                             <a class="text-light text-decoration-none" target="_blank" href="https://twitter.com/">
+=======
+                            <a class="text-light text-decoration-none" target="_blank" href="https://twitter.com/ZonaGamer">
+>>>>>>> ff66d95 (Actualizar proyecto final: Terminado carrito y correcciones de archivos .html)
                                 <i class="fab fa-twitter fa-lg fa-fw"></i>
                             </a>
                         </li>
 
                         <li class="list-inline-item border border-light rounded-circle text-center">
+<<<<<<< HEAD
                             <a class="text-light text-decoration-none" target="_blank" href="https://www.linkedin.com/">
+=======
+                            <a class="text-light text-decoration-none" target="_blank" href="https://www.linkedin.com/ZonaGamer">
+>>>>>>> ff66d95 (Actualizar proyecto final: Terminado carrito y correcciones de archivos .html)
                                 <i class="fab fa-linkedin fa-lg fa-fw"></i>
                             </a>
                         </li>
                     </ul>
                 </div>
+<<<<<<< HEAD
 
                 <div class="col-auto">
                     <label class="sr-only" for="subscribeEmail">Email address</label>
@@ -294,6 +400,17 @@
                     Copyright &copy; 2021 
                     | Designed by <a rel="sponsored" href="https://templatemo.com" target="_blank">TemplateMo</a>
                 </p>
+=======
+
+                <div class="col-auto">
+                    <label class="sr-only" for="subscribeEmail">Email</label>
+                    <div class="input-group mb-2">
+                        <input type="text" class="form-control bg-dark border-light" placeholder="Email address">
+                        <div class="input-group-text btn-success text-light">Subscribite</div>
+                    </div>
+                </div>
+
+>>>>>>> ff66d95 (Actualizar proyecto final: Terminado carrito y correcciones de archivos .html)
             </div>
         </div>
 
@@ -302,11 +419,19 @@
 
 
     <!-- Start Script -->
+<<<<<<< HEAD
     <script src="{{ url_for('static', filename='js/jquery-1.11.0.min.js') }}"></script>
     <script src="{{ url_for('static', filename='js/jquery-migrate-1.2.1.min.js') }}"></script>
     <script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
     <script src="{{ url_for('static', filename='js/templatemo.js') }}"></script>
     <script src="{{ url_for('static', filename='js/custom.js') }}"></script>
+=======
+    <script src="{{ url_for('static', filename='assets/js/jquery-1.11.0.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/js/jquery-migrate-1.2.1.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/js/templatemo.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/js/custom.js') }}"></script>
+>>>>>>> ff66d95 (Actualizar proyecto final: Terminado carrito y correcciones de archivos .html)
     <!-- End Script -->
 </body>
 

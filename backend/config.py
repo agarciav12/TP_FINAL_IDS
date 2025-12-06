@@ -17,6 +17,16 @@ class Config:
 
     # Configuración de CORS
     CORS_ORIGINS = os.getenv("CORS_ORIGINS", "*")
+<<<<<<< HEAD
+=======
+    MAIL_SERVER = "smtp.gmail.com"
+    
+    MAIL_PORT = 587
+    MAIL_USE_TLS = True
+    MAIL_USERNAME = "TU_EMAIL@gmail.com"
+    MAIL_PASSWORD = "CONTRASEÑA_DE_APP"
+    MAIL_DEFAULT_SENDER = "TU_EMAIL@gmail.com"
+>>>>>>> ff66d95 (Actualizar proyecto final: Terminado carrito y correcciones de archivos .html)
 
 
 def get_config():

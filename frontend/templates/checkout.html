@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>ZonaGamer - Compra realizada</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="{{ url_for('static', filename='assets/img/apple-icon.png') }}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='assets/img/favicon.ico') }}">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/templatemo.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/custom.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/fontawesome.min.css') }}">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light shadow">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a class="navbar-brand text-success logo h1 align-self-center" href="{{ url_for('home') }}">
+                Zona Gamer
+            </a>
+        </div>
+    </nav>
+
+    <section class="bg-light">
+        <div class="container py-5 text-center">
+            <h1 class="h2 mb-3">¡Gracias por tu compra!</h1>
+
+            <p class="mb-1">{{ compra.message }}</p>
+            <p class="mb-1">Número de compra: <strong>{{ compra.compra_id }}</strong></p>
+            <p class="mb-4">Total pagado: <strong>${{ "%.2f"|format(compra.total) }}</strong></p>
+
+            <a href="{{ url_for('productos') }}" class="btn btn-success">
+                Volver a la tienda
+            </a>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-light py-3">
+        <div class="container text-center">
+            Zona Gamer - TP IDS
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='assets/js/jquery-1.11.0.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/js/jquery-migrate-1.2.1.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/js/templatemo.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/js/custom.js') }}"></script>
+</body>
+</html>

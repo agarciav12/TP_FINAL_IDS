@@ -1,0 +1,7 @@
+# Configuración de Flask
+FLASK_DEBUG=True
+FLASK_HOST=127.0.0.1
+FLASK_PORT=5001
+
+# URL del Backend API
+BACKEND_URL=http://127.0.0.1:5000/api

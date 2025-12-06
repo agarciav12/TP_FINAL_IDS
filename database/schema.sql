@@ -3,7 +3,12 @@ CREATE TABLE productos (
     nombre VARCHAR(50) NOT NULL,
     categoria VARCHAR(50) NOT NULL,
     precio DECIMAL(10, 2) NOT NULL,
+<<<<<<< HEAD
     stock INTEGER DEFAULT 0
+=======
+    stock INTEGER DEFAULT 0,
+    imagen VARCHAR(255)
+>>>>>>> ff66d95 (Actualizar proyecto final: Terminado carrito y correcciones de archivos .html)
 );
 
 CREATE TABLE usuarios (
